@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" data-theme ="dark">
+<html lang="en" data-theme="dark">
   <head>
     <script src="./js/auth.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Details</title>
-
+    <link rel="icon" href="images/logo-sm.png" />
     <!--! ============ Start FONTAWESOME LIBRAIRY ============ -->
     <link rel="stylesheet" href="css/all.min.css" />
     <!--! ============ End FONTAWESOME LIBRAIRY ============ -->
-        
+
     <!--! ============ Start FONTS ============ -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-     <!--! ============ End FONTS ============ -->
-    
-     <!--! ============ Start BOOTSTRAP CSS ============ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!--! ============ End FONTS ============ -->
+
+    <!--! ============ Start BOOTSTRAP CSS ============ -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!--! ============ End BOOTSTRAP CSS ============ -->
 
@@ -26,20 +29,22 @@
   </head>
 
   <body>
+    <!--? ========== Start Fixed ========== -->
+    <!-- fa-moon   fa-sun -->
+    <span class="position-fixed bottom-0 end-0 m-3 z-3">
+      <i role="button" id="mode" class="fa-regular fa-sun fa-xl p-3"></i>
+    </span>
+    <!--? ========== End Fixed ========== -->
 
-      <!--? ========== Start Fixed ========== -->
-      <!-- fa-moon   fa-sun -->
-      <span class="position-fixed bottom-0 end-0 m-3 z-3">
-        <i role="button" id="mode" class="fa-regular fa-sun fa-xl p-3"></i>
-     </span>
-     <!--? ========== End Fixed ========== -->
-     
     <!--?  ============  Start  main   ============ -->
     <main class="py-5 min-vh-100 details">
       <div class="container">
-         <section class="row g-4" id="detailsData"></section>
+        <section class="row g-4" id="detailsData"></section>
+        <span class="d-block position-absolute text-info close"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
       </div>
-   </main>
+    </main>
     <!--?  ============  End  main   ============ -->
 
     <!--! ============ Start BOOTSTRAP JS ============ -->

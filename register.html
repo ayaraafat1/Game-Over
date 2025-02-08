@@ -1,119 +1,168 @@
 <!DOCTYPE html>
-<html lang="en" data-theme ="dark">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
+    <link rel="icon" href="images/logo-sm.png" />
+    <!--! ============ Start FONTAWESOME LIBRAIRY ============ -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--! ============ End FONTAWESOME LIBRAIRY ============ -->
 
-     <!--! ============ Start FONTAWESOME LIBRAIRY ============ -->
-     <link rel="stylesheet" href="css/all.min.css" />
-     <!--! ============ End FONTAWESOME LIBRAIRY ============ -->
+    <!--! ============ Start FONTS ============ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!--! ============ End FONTS ============ -->
 
-     <!--! ============ Start FONTS ============ -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-     <!--! ============ End FONTS ============ -->
-     
-     <!--! ============ Start BOOTSTRAP CSS ============ -->
-     <link rel="stylesheet" href="css/bootstrap.min.css" />
-     <!--! ============ End BOOTSTRAP CSS ============ -->
-      
-     <!--! ============ Start MAIN CSS ============ -->
-     <link rel="stylesheet" href="css/main.css" />
-     <!--! ============ End MAIN CSS ============ -->
+    <!--! ============ Start BOOTSTRAP CSS ============ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--! ============ End BOOTSTRAP CSS ============ -->
+
+    <!--! ============ Start MAIN CSS ============ -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!--! ============ End MAIN CSS ============ -->
   </head>
 
   <body>
+    <!--? ========== Start Fixed ========== -->
+    <!-- fa-moon   fa-sun -->
+    <span class="position-fixed bottom-0 end-0 m-3 z-3">
+      <i role="button" id="mode" class="fa-regular fa-sun fa-xl p-3"></i>
+    </span>
+    <!--? ========== End Fixed ========== -->
 
-      <!--? ========== Start Fixed ========== -->
-      <!-- fa-moon   fa-sun -->
-      <span class="position-fixed bottom-0 end-0 m-3 z-3">
-        <i role="button" id="mode" class="fa-regular fa-sun fa-xl p-3"></i>
-     </span>
-     <!--? ========== End Fixed ========== -->
-     
     <!--?  ============  Start  main   ============ -->
     <main class="container register min-vh-100 hstack">
       <section class="register-area shadow w-100 rounded overflow-hidden">
-         <div class="row g-0">
-            <div class="col-lg-5 d-none d-md-block">
-               <div class="image"></div>
-            </div>
-            <div class="col-lg-7">
-               <div class="py-2 px-3">
-                  <header class="text-center pt-2">
-                     <img src="./images/logo-sm.png" alt="logo game over" />
-                     <h1>Register to Game Over</h1>
-                  </header>
+        <div class="row g-0">
+          <div class="col-lg-5 d-none d-md-block">
+            <div class="image"></div>
+          </div>
+          <div class="col-lg-7">
+            <div class="py-2 px-3">
+              <header class="text-center pt-2">
+                <img src="./images/logo-sm.png" alt="logo game over" />
+                <h1>Register to Game Over</h1>
+              </header>
 
-                  <form class="row g-3 mt-3 mb-3" id="register">
-                     <div class="col-12">
-                        <div class="form-data">
-                           <input type="text" id="Name" class="form-control" placeholder="Your Name" />
-                           <ul class="alert alert-danger py-1 invalid-feedback">
-                              <li> Name Is Required</li>
-                              <li>Minmum Length 2 and Maxmum 20</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-12">
-                        <div class="form-data">
-                           <input type="email" id="email" class="form-control" placeholder="Email Address" />
-                           <ul class="alert alert-danger py-1 invalid-feedback">
-                              <li>Email Is Required</li>
-                              <li>Enter a valid email address,such as:username@gmail.com</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-12">
-                        <div class="form-data position-relative">
-                           <input type="password" id="password" class="form-control " placeholder="Password" />
-                           <span id="showPassword"><i class="fa-solid fa-eye"></i></span>
-                           <ul class="alert alert-danger py-1 invalid-feedback">
-                              <li>Password Is Required</li>
-                              <li>Minimum eight characters, at least one letter and one number</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-12">
-                        <div class="form-data position-relative">
-                           <input type="password" id="rePassword" class="form-control" placeholder="Confirm Password" />
-                           <span id="showRePassword"><i class="fa-solid fa-eye"></i></span>
-                           <ul class="alert alert-danger py-1 invalid-feedback">
-                              <li>Confirm Password Is Required</li>
-                              <li>Confirm Password must match Password.</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-12">
-                        <div class="form-data">
-                           <input type="number" id="phone" class="form-control" placeholder="Your Phone Number" />
-                           <ul class="alert alert-danger py-1 invalid-feedback">
-                              <li>Phone Number Is Required</li>
-                              <li>You must enter an Egyptian phone number that is just 11 numbers.</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-12">
-                        <button  type="submit" disabled="type" class="btn w-100 main-btn" id="btnRegister">Register</button>
-                        <p id="msg" class="text-center text-danger  mt-2 mb-0"></p>
-                     </div>
-                  </form>
+              <form class="row g-3 mt-3 mb-3" id="register">
+                <div class="col-12">
+                  <div class="form-data">
+                    <input
+                      type="text"
+                      id="Name"
+                      class="form-control"
+                      placeholder="Your Name"
+                    />
+                    <ul class="alert alert-danger py-1 invalid-feedback">
+                      <li>Name Is Required</li>
+                      <li>Minmum Length 2 and Maxmum 20</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-data">
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                    />
+                    <ul class="alert alert-danger py-1 invalid-feedback">
+                      <li>Email Is Required</li>
+                      <li>
+                        Enter a valid email address,such as:username@gmail.com
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-data position-relative">
+                    <input
+                      type="password"
+                      id="password"
+                      class="form-control"
+                      placeholder="Password"
+                    />
+                    <span id="showPassword"
+                      ><i class="fa-solid fa-eye"></i
+                    ></span>
+                    <ul class="alert alert-danger py-1 invalid-feedback">
+                      <li>Password Is Required</li>
+                      <li>
+                        Minimum eight characters, at least one letter and one
+                        number
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-data position-relative">
+                    <input
+                      type="password"
+                      id="rePassword"
+                      class="form-control"
+                      placeholder="Confirm Password"
+                    />
+                    <span id="showRePassword"
+                      ><i class="fa-solid fa-eye"></i
+                    ></span>
+                    <ul class="alert alert-danger py-1 invalid-feedback">
+                      <li>Confirm Password Is Required</li>
+                      <li>Confirm Password must match Password.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-data">
+                    <input
+                      type="number"
+                      id="phone"
+                      class="form-control"
+                      placeholder="Your Phone Number"
+                    />
+                    <ul class="alert alert-danger py-1 invalid-feedback">
+                      <li>Phone Number Is Required</li>
+                      <li>
+                        You must enter an Egyptian phone number that is just 11
+                        numbers.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    disabled="type"
+                    class="btn w-100 main-btn"
+                    id="btnRegister"
+                  >
+                    Register
+                  </button>
+                  <p id="msg" class="text-center text-danger mt-2 mb-0"></p>
+                </div>
+              </form>
 
-                  <footer>
-                     <p class="text-center small">
-                        Already a member?
-                        <a href="./index.html" class="link-secondary text-decoration-none" role="button"
-                           >LogIn <i class="fa-solid fa-angle-right"></i
-                        ></a>
-                     </p>
-                  </footer>
-               </div>
+              <footer>
+                <p class="text-center small">
+                  Already a member?
+                  <a
+                    href="./index.html"
+                    class="link-secondary text-decoration-none"
+                    role="button"
+                    >LogIn <i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </p>
+              </footer>
             </div>
-         </div>
+          </div>
+        </div>
       </section>
-   </main>
+    </main>
     <!--?  ============  End  main   ============ -->
 
     <!--! ============ Start BOOTSTRAP JS ============ -->
